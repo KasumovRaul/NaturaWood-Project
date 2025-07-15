@@ -1,0 +1,356 @@
+{
+  "categories": [
+    {
+      "image": "/images/wine-slider-1.avif",
+      "name": "Heritage Collection"
+    },
+    {
+        "image": "/images/wine-slider-2.avif",
+        "name": "Vintage Chronicles"
+    },
+    {
+        "image": "/images/wine-slider-3.avif",
+        "name": "Origin Stories"
+    }
+  ], 
+
+  "entrance": [
+     {
+      "image": "/images/enterencyImg-1.webp",
+      "name": "Urban Loft Entryway Console",
+      "description": "Elegant entrance solution with minimalist design that complements any hallway decor.",
+      "id": 1,
+      "price": "220 ₾",
+      "salePrice": "170 ₾",
+      "category": "entrance",
+      "discount": "-30%",
+      "material": "Wood"
+     },
+     {
+      "image": "/images/EntrencyImg-2.jpg",
+      "name": "Scandinavian Slimline Wardrobe",
+      "description": "Compact yet spacious wardrobe perfect for storing coats, shoes and accessories in narrow spaces.",
+      "id": 2,
+      "price": "400 ₾",
+      "salePrice": "640 ₾",
+      "category": "entrance",
+      "discount": "-30%",
+      "material": "Wood"
+     },
+     {
+      "image": "/images/EntrencyImg-3.jpg",
+      "name": "Nordic Entryway Dresser",
+      "description": "Versatile storage unit with multiple drawers ideal for organizing small items in your entryway.",
+      "id": 3,
+      "price": "570 ₾",
+      "category": "entrance",
+      "material": "Fabric"
+     },
+     {
+      "image": "/images/EntrencyImg-4.webp",
+      "name": "Metropolitan Leather Hall Set",
+      "description": "Premium leather entrance set that combines durability with sophisticated urban aesthetics.",
+      "id": 4,
+      "price": "420 ₾",
+      "category": "entrance",
+      "material": "Leather"
+     }
+  ],
+
+  "chair": [
+    {
+      "image": "/images/ChairImg-1.webp",
+      "name": "Barcelona Executive Leather Chair",
+      "description": "Ergonomic leather chair designed for both comfort and style in modern living spaces.",
+      "id": 5,
+      "price": "200 ₾",
+      "category": "chair",
+      "material": "Leather"
+    },
+    {
+      "image": "/images/ChairImg-2.jpg",
+      "name": "Wenge Luxury Accent Chair",
+      "description": "Contemporary chair with premium leather upholstery and sturdy wooden frame for lasting comfort.",
+      "id": 6,
+      "price": "180 ₾",
+      "salePrice": "370₾",
+      "discount": "-30%",
+      "material": "Leather",
+      "category": "chair"
+    },
+    {
+      "image": "/images/ChairImg-3.jpg",
+      "name": "Convertible Walnut Futon Chair",
+      "description": "Convertible futon chair that easily transforms into a comfortable guest bed when needed.",
+      "id": 7,
+      "price": "190 ₾",
+      "material": "Leather",
+      "category": "chair"
+    },
+    {
+      "image": "/images/ChairImg-4.webp",
+      "name": "Mid-Century Walnut Armchair",
+      "description": "Mid-century inspired chair with walnut finish and plush cushioning for superior comfort.",
+      "id": 8,
+      "price": "245 ₾",
+      "salePrice": "390₾",
+      "discount": "-30%",
+      "material": "Leather",
+      "category": "chair"
+    },
+    {
+      "image": "/images/ChairImg-5.jpg",
+      "name": "Premium Walnut Lounge Chair",
+      "description": "Upgraded version of our popular chair with enhanced lumbar support and premium leather.",
+      "id": 9,
+      "price": "285 ₾",
+      "material": "Leather",
+      "category": "chair"
+    }
+  ],
+
+  "beds": [
+    {
+      "image": "/images/bed-1.webp",
+      "imageHoverTwo": "/images/HoverBedOne.webp",
+      "name": "Royal Leather King Bed",
+      "description": "King-sized leather bed frame with luxurious padding and sturdy construction for ultimate comfort.",
+      "id": 10,
+      "price": "800 ₾",
+      "salePrice": "980₾",
+      "discount": "-30%",
+      "material": "Leather",
+      "category": "beds",
+       "sizes": "2080 × 1650 × 1000 mm"
+    },
+    {
+      "image": "/images/bed-2.jpg",
+      "imageHoverTwo": "/images/HoverBedTwo.jpg",
+      "imageHoverThree": "/images/HoverBedThree.jpg",
+      "name": "Platform Storage Bed Milano",
+      "description": "Modern platform bed with integrated storage and premium leather headboard for contemporary bedrooms.",
+      "id": 11,
+      "price": "900₾",
+      "salePrice": "1030₾",
+      "discount": "-30%",
+      "material": "Leather",
+      "category": "beds",
+       "sizes": "2180 × 1500 × 1000 mm"
+    },
+    {
+      "image": "/images/bed-3.jpg",
+      "name": "Rustic Oak Slat Bed",
+      "description": "Rustic wooden bed frame crafted from sustainable timber with natural grain patterns.",
+      "id": 12,
+      "price": "650₾",
+      "material": "Wood",
+      "category": "beds",
+       "sizes": "2080 × 1650 × 1000 mm"
+    },
+    {
+      "image": "/images/bed-4.webp",
+      "name": "Bohemian Rattan Canopy Bed",
+      "description": "Bohemian-style rattan bed that brings natural texture and breathability to your sleeping space.",
+      "id": 13,
+      "price": "850 ₾",
+      "material": "Rattan",
+      "category": "beds",
+       "sizes": "2780 × 1950 × 1100 mm"
+    },
+    {
+      "image": "/images/bed-5.jpg",
+      "name": "Minimalist Rattan Frame Bed",
+      "description": "Minimalist rattan bed frame with clean lines and excellent ventilation for warm climates.",
+      "id": 14,
+      "price": "700 ₾",
+      "material": "Rattan",
+      "category": "beds",
+       "sizes": "2480 × 1950 × 1500 mm"
+    },
+    {
+      "image": "/images/bed-6.webp",
+      "name": "Plush Fabric Upholstered Bed",
+      "description": "Premium fabric upholstered bed with tufted headboard and hypoallergenic materials.",
+      "id": 15,
+      "price": "1400 ₾",
+      "salePrice": "1700₾",
+      "discount": "-40%",
+      "material": "Fabric",
+      "category": "beds",
+       "sizes": "2020 × 1450 × 1200 mm"
+    },
+    {
+      "image": "/images/bed-7.webp",
+      "name": "Cozy Fabric Panel Bed",
+      "description": "Soft fabric bed with reinforced frame and plush headboard for cozy reading sessions.",
+      "id": 16,
+      "price": "1100 ₾",
+      "material": "Fabric",
+      "category": "beds",
+       "sizes": "2000 × 1750 × 900 mm"
+    },
+    {
+      "image": "/images/bed-8.webp",
+      "name": "Industrial Metal Frame Bed",
+      "description": "Industrial-chic metal bed frame with vintage-inspired details and exceptional durability.",
+      "id": 17,
+      "price": "1000 ₾",
+      "salePrice": "1200₾",
+      "discount": "-40%",
+      "material": "Metal",
+      "category": "beds",
+       "sizes": "2280 × 1850 × 1100 mm"
+    }
+  ],
+
+  "child": [
+    {
+      "image": "/images/child-1.webp",
+      "name": "Musical Discovery Activity Table",
+      "description": "Interactive children's table with musical elements to stimulate creativity and learning.",
+      "id": 18,
+      "price": "300 ₾",
+      "salePrice": "570₾",
+      "discount": "-30%",
+      "material": "Metal",
+      "category": "child"
+    },
+    {
+      "image": "/images/child-2.webp",
+      "imageHoverTwo": "/images/ChildBed-2.webp",
+      "imageHoverThree": "/images/ChildBed-2.webp",
+      "name": "Playful Single-Door Wardrobe",
+      "description": "Child-friendly wardrobe with rounded edges and colorful finishes for safe storage solutions.",
+      "id": 19,
+      "price": "350 ₾",
+      "material": "Wood",
+       "category": "child"
+    },
+    {
+      "image": "/images/child-3.webp",
+      "name": "Double-Door Kids' Storage Cabinet",
+      "description": "Spacious kids' wardrobe with adjustable shelves and fun decorative elements.",
+      "id": 20,
+      "price": "400 ₾",
+      "salePrice": "650₾",
+      "discount": "-30%",
+      "material": "Wood",
+       "category": "child"
+    },
+    {
+      "image": "/images/child-4.jpeg",
+      "imageHoverTwo":"/images/childTab-2.jpeg",
+      "name": "Dreamland Children's Bedroom Set",
+      "description": "Complete children's room set featuring soft fabric elements and playful design motifs.",
+      "id": 21,
+      "price": "370 ₾",
+      "material": "Fabric",
+       "category": "child"
+    },
+    {
+      "image": "/images/child-5.webp",
+      "name": "Eco Kids' Rattan Furniture Suite",
+      "description": "Eco-friendly rattan furniture set designed specifically for children's comfort and safety.",
+      "id": 22,
+      "price": "350 ₾",
+      "material": "Rattan",
+       "category": "child"
+    }
+  ],
+
+  "table":[
+    {
+      "image": "/images/table-1.jpg",
+      "name": "Artisanal Rattan Dining Table",
+      "description": "Handwoven rattan dining table that brings natural warmth to any dining space.",
+      "id": 23,
+      "price": "320 ₾",
+      "material": "Rattan",
+       "category": "table"
+    },
+    {
+      "image": "/images/table-2.webp",
+      "name": "Extendable Solid Oak Dining Table",
+      "description": "Solid wood dining table with extendable leaves for flexible entertaining options.",
+      "id": 24,
+      "price": "340 ₾",
+      "salePrice": "520₾",
+      "discount": "-30%",
+      "material": "Wood",
+       "category": "table"
+    },
+    {
+      "image": "/images/table-3.jpg",
+      "name": "Fabric Storage Side Table",
+      "description": "Fabric-covered side table with hidden storage compartment for living room essentials.",
+      "id": 25,
+      "price": "360 ₾",
+      "material": "Fabric",
+       "category": "table"
+    },
+    {
+      "image": "/images/table-4.jpg",
+      "imageHoverTwo":"/images/HoverTable.jpg",
+      "name": "Metallic Accent Coffee Table",
+      "description": "Multi-functional coffee table with fabric drawers and elegant metallic accents.",
+      "id": 26,
+      "price": "350 ₾",
+      "salePrice": "540₾",
+      "discount": "-30%",
+      "material": "Fabric",
+       "category": "table"
+    }
+  ],
+
+  "sofa": [
+    {
+      "image": "/images/Sofa-1.webp",
+      "name": "Aqua Leather Three-Seater Sofa",
+      "description": "Spacious three-seater with wooden legs and premium upholstery for family gatherings.",
+      "id": 27,
+      "price":"800 ₾",
+      "salePrice": "950₾",
+      "discount": "-30%",
+      "material": "Wood",
+       "category": "sofa"
+    },
+    {
+      "image": "/images/Sofa-1.webp",
+      "name": "Arizona Modern Three-Seater",
+      "description": "Contemporary sofa with clean lines and durable wooden frame for modern living rooms.",
+      "id": 28,
+      "price":"800 ₾",
+      "material": "Wood",
+          "category": "sofa"
+    },
+    {
+      "image": "/images/Sofa-1.webp",
+      "name": "Metropolitan Two-Seater Loveseat",
+      "description": "Compact metal-framed loveseat ideal for small spaces without compromising on comfort.",
+      "id": 29,
+      "price":"1300 ₾",
+      "material": "Metal",
+          "category": "sofa"
+    },
+    {
+      "image": "/images/Sofa-1.webp",
+      "name": "Industrial Chic Three-Seater",
+      "description": "Industrial-style sofa with metal legs and plush cushions for urban interiors.",
+      "id": 30,
+      "price":"700 ₾",
+      "salePrice": "900₾",
+      "discount": "-30%",
+      "material": "Metal",
+          "category": "sofa"
+    },
+    {
+      "image": "/images/Sofa-1.webp",
+      "name": "Convertible Fabric Sofa Bed",
+      "description": "Convertible fabric sofa that transforms into a comfortable bed for overnight guests.",
+      "id": 31,
+      "price":"1200 ₾",
+      "material": "Fabric",
+          "category": "sofa"
+    }
+  ]
+}

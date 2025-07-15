@@ -1,0 +1,316 @@
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+
+.slick-slider {
+  height: 100%;
+}
+
+.slick-list {
+  height: 100%;
+}
+
+.slick-track {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.slide-item {
+  position: relative;
+  height: 100vh;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 8s ease-out;
+  filter: brightness(0.7) contrast(1.1);
+}
+
+/* Hover effect for images */
+.slide-item:hover .slide-image {
+  transform: scale(1.05);
+  filter: brightness(0.8) contrast(1.2);
+}
+
+/* Content overlay */
+.slide-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 0 2rem;
+  animation: slideInUp 1s ease-out;
+}
+
+.slide-content::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.slide-content-title {
+  position: relative;
+}
+
+.slide-content-title h2 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e9ecef 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  position: relative;
+  animation: textGlow 3s ease-in-out infinite alternate;
+}
+
+.slide-content-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1);
+  border-radius: 2px;
+  animation: lineExpand 1.5s ease-out 0.5s both;
+}
+
+/* Animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+  100% {
+    text-shadow: 0 4px 30px rgba(255,255,255,0.3), 0 8px 40px rgba(0,0,0,0.7);
+  }
+}
+
+@keyframes lineExpand {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 60px;
+    opacity: 1;
+  }
+}
+
+/* Custom dots (if you want to enable them) */
+.slick-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 3;
+}
+
+.slick-dots li {
+  margin: 0 8px;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+  background: white;
+  border-color: white;
+  transform: scale(1.2);
+}
+
+.slick-dots li button:hover {
+  border-color: white;
+  background: rgba(255,255,255,0.7);
+}
+
+/* Custom arrows (if you want to enable them) */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.6);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slick-prev {
+  left: 30px;
+}
+
+.slick-next {
+  right: 30px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 20px;
+  color: white;
+  opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+  .slider-container {
+    height: 100vh;
+  }
+  
+  .slide-content {
+    padding: 0 1rem;
+    max-width: 90%;
+  }
+  
+  .slide-content-title h2 {
+    font-size: clamp(2rem, 8vw, 3rem);
+    letter-spacing: 0.02em;
+  }
+  
+  .slide-content-title h2::after {
+    width: 40px;
+    height: 2px;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .slick-prev {
+    left: 20px;
+  }
+  
+  .slick-next {
+    right: 20px;
+  }
+  
+  .slick-dots {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-content-title h2 {
+    font-size: clamp(1.5rem, 10vw, 2.5rem);
+  }
+  
+  .slide-content-title h2::after {
+    width: 30px;
+  }
+}
+
+
+@keyframes slideImageLoad {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slide-image {
+  animation: slideImageLoad 1s ease-out;
+}
+
+
+.slide-content {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+
+.slide-item.slick-active .slide-image {
+  animation: parallaxSlide 0.8s ease-out;
+}
+
+@keyframes parallaxSlide {
+  from {
+    transform: translateX(-20px) scale(1.05);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}

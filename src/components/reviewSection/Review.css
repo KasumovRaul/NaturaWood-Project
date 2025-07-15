@@ -1,0 +1,379 @@
+/* Genel Ayarlamalar */
+.review-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.review-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.review-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #930528; /* Vurgu rengi */
+  border-radius: 2px;
+}
+
+/* Yorum Özeti Bölümü */
+.review-summary {
+  display: flex;
+  flex-wrap: wrap; /* Küçük ekranlarda alt alta geçiş */
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.summary-left {
+  flex: 1;
+  min-width: 250px; /* Minimum genişlik */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-right: 1rem;
+  border-right: 1px solid #eee; /* Ayırıcı çizgi */
+}
+
+.average-rating {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #930528;
+}
+
+.average-rating span {
+  font-size: 4.5rem; /* Puanın daha büyük olması için */
+  line-height: 1;
+}
+
+.total-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #666;
+}
+
+.total-reviews p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.star-filled {
+  color: #ffc107; /* Sarı yıldız */
+  font-size: 1.5rem;
+  margin: 0 1px;
+}
+
+.star-empty {
+  color: #e4e5e9; /* Gri yıldız */
+  font-size: 1.5rem;
+  margin: 0 1px;
+}
+
+.summary-right {
+  flex: 2;
+  min-width: 300px; /* Minimum genişlik */
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 1rem;
+}
+
+.rating-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.star-label {
+  width: 80px; /* Sabit genişlik */
+  text-align: right;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.bar-wrapper {
+  flex-grow: 1;
+  background-color: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.rating-bar {
+  background-color: #930528; /* Bar rengi */
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease-out; /* Animasyon */
+}
+
+.bar-percentage {
+  width: 40px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Yorum Yazma Formu Bölümü */
+.review-form-section {
+  background-color: #fefefe;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+}
+
+.review-form-section h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.75rem;
+}
+
+.review-form .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.review-form input[type="text"],
+.review-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* Padding'in genişliğe dahil olmasını sağlar */
+}
+
+.review-form input[type="text"]:focus,
+.review-form textarea:focus {
+  border-color: #930528;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(147, 5, 40, 0.1);
+}
+
+.star-rating-input {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.star-input {
+  font-size: 1.8rem;
+  color: #e4e5e9; /* Varsayılan gri */
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.star-input:hover,
+.star-input.selected {
+  color: #ffc107; /* Seçili/hover sarı */
+}
+
+.form-message {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.form-message.error {
+  background-color: #fde8e8;
+  color: #d12c2c;
+  border: 1px solid #f5c6cb;
+}
+
+.form-message.success {
+  background-color: #e6ffed;
+  color: #28a745;
+  border: 1px solid #c3e6cb;
+}
+
+.submit-review-btn {
+  background-color: #930528;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%; 
+}
+
+.submit-review-btn:hover {
+  background-color: #800020;
+  transform: translateY(-2px);
+}
+
+
+.review-list-section {
+  padding: 1.5rem;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.review-list-section h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.75rem;
+}
+
+.no-reviews-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #777;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 1.5rem;
+}
+
+.review-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 0.75rem;
+}
+
+.reviewer-name {
+  font-weight: 700;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.review-date {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.review-rating .star-filled,
+.review-rating .star-empty {
+  font-size: 1.2rem;
+}
+
+.review-comment {
+  color: #555;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  .review-container {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .review-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .review-summary {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .summary-left {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .summary-right {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .review-form-section,
+  .review-list-section {
+    padding: 1rem;
+  }
+
+  .review-form-section h3,
+  .review-list-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr; /* Tek sütunlu düzen */
+  }
+}
+
+@media (max-width: 480px) {
+  .review-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .average-rating {
+    font-size: 3rem;
+  }
+  .average-rating span {
+    font-size: 3.8rem;
+  }
+
+  .star-input {
+    font-size: 1.5rem;
+  }
+
+  .submit-review-btn {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+}

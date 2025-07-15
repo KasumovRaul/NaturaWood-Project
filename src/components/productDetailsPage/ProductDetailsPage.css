@@ -1,0 +1,268 @@
+
+.product-details{
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.product-details-container{
+  display: flex;
+  flex-direction: row;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.product-details-left-section {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-left-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.product-left-image-hover {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  position: relative;
+  left: 2%;
+}
+
+
+.product-left-image-hover img {
+  width: 80%;
+  height: auto;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin-bottom: 6px;
+  object-fit: cover;
+}
+
+.product-left-image {
+  flex: 1;
+}
+
+.product-left-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+.product-left-image img {
+  width: 600px;
+  max-width: 700px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.product-right-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 3em;
+  text-align: left;
+  padding: 0 20px;
+  max-width: 600px;
+}
+
+.product-right-name p {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: #111;
+}
+
+.product-right-category span {
+  font-size: 14px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-right-price h5 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+}
+
+.product-right-desc span {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.product-right-btn{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.product-right-add .addBtn{
+  width: 180px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  transition: 0.2s background ease-in-out;
+}
+
+.product-right-add .addBtn:hover{
+ background: #393939;
+}
+
+.product-right-wish-btn span{
+  font-size: 22px;
+  cursor: pointer;
+  border: 1px solid #777;
+  padding: 4px 7px;
+  border-radius: 40px;
+  margin-top: -3px;
+  transition: 0.2s border ease ;
+}
+
+.product-right-wish-btn span:hover{
+ border: 1px solid #800020;
+}
+
+.product-price-discounted{
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.product-discount{
+  margin-left:8px;
+  font-size: 10px;
+  background-color: #800020;
+  color: #fff;
+  border-radius: 3px;
+  padding: 3px 5px;
+}
+
+.product-price-original{
+  font-size: larger;
+}
+
+.wd-accordian-delivery-wd,
+.wd-accordian-Note-wd{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin: 10px 0;
+ cursor: pointer;
+}
+
+.wd-right-accordian,
+.wd-right-Note{
+ border-bottom: 1px solid #b3b3b3;
+}
+
+.wd-accordian-delivery-icon{
+ font-size: larger;
+ transition: all 0.4s ease-in-out;   
+}
+
+.wd-accordian-delivery-icon.scale,
+.wd-accordian-Note-icon.scale{
+  transform: rotate(180deg);  
+}
+
+.wd-accordian-delivery-content,
+.wd-accordian-Note-content{
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.wd-accordian-delivery-content.active,
+.wd-accordian-Note-content.active{
+  max-height: 600px; 
+  opacity: 1;
+}
+
+.wd-accordian-delivery-content h4{
+  padding: 8px 0;
+}
+
+.wd-accordian-delivery-content strong{
+ font-weight: 600;
+}
+
+.wd-accordian-Note-content p{
+ margin-bottom: 5px;
+}
+
+@media (max-width:1100px){
+.product-left-image img {
+  width: 400px;
+  max-width: 700px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+}
+
+@media (max-width:850px){
+.product-left-image img {
+  width: 350px;
+  max-width: 700px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.product-details {
+    display: flex;
+    justify-content: center;
+  padding: 0; 
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+}
+
+@media (max-width:768px){
+.product-left-image img {
+  width: 100%;
+  max-width: 700px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.product-details-left-section{
+  display: block;
+  padding: 10px;
+}
+
+
+}
+
+@media (max-width:500px){
+  .product-left-content{
+    display: block;
+  }
+
+  .product-left-image-hover img{
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .product-left-image-hover{
+    flex-direction: row;
+    gap: 10px;
+  }
+}

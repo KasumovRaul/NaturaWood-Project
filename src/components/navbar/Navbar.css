@@ -1,0 +1,291 @@
+
+:root {
+  --primary-color: #800020;
+  --secondary-color: #5b051a;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+  --bg-light: #ffffff;
+  --bg-dark: #222222;
+  --transition: all 0.3s ease;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.navbar-container {
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  z-index: 1001;
+}
+
+.logo-link {
+  color: var(--text-light);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-highlight {
+  font-weight: 700;
+  color: #ffd700;
+}
+
+
+.navbar-desktop {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffd700;
+  transition: var(--transition);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1001;
+}
+
+.social-icons {
+  display: none; 
+}
+
+.action-icons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  right: 70px;
+  position: absolute;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  padding: 0.3rem;
+  transition: var(--transition);
+}
+
+ #user{
+ display: block;
+ }
+
+.icon-btn:hover {
+  color: #ffd700;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ffd700;
+  color: var(--text-dark);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 0.9rem;
+  border-radius: 40px;
+}
+
+.cart-total {
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: none; /* Hide cart total on mobile */
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  margin-left: 0.5rem;
+}
+
+/* Mobile Navigation */
+.navbar-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.mobile-links {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mobile-links li {
+  margin: 1.5rem 0;
+}
+
+.mobile-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.mobile-links a:hover {
+  color: #ffd700;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.mobile-social {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.mobile-social a {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.mobile-social a:hover {
+  color: #ffd700;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1050px){
+.nav-links{
+  margin-left: -12em;
+}
+}
+
+@media (max-width: 868px){
+  #user{
+    display: none;
+  }
+}
+
+@media (min-width: 868px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .navbar-desktop {
+    display: block;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .action-icons {
+    gap: 1rem;
+  }
+
+  .cart-total {
+    display: inline; 
+  }
+
+}
+
+@media (min-width: 992px) {
+  .navbar-container {
+    padding: 0 2rem;
+  }
+
+  .navbar-actions {
+    gap: 1.5rem;
+  }
+}
