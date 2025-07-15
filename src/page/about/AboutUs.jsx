@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import imgBanner from "../../../public/images/Sixinch-1-e1614795015128.jpg"
-import aboutImg from "../../../public/images/r.png" 
+import aboutImg from "../../../public/images/rImage.png" 
 import "./AboutUs.css"
 import CountUp from 'react-countup';
 
