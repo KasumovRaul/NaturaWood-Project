@@ -222,11 +222,18 @@
   }
   
   .product-add-btn button {
-    width: 100%;
+    padding: .55rem 1.5rem
   }
   
   .product-compare{
     width: 100%;
     border-radius: 4px;
+  }
+}
+
+@media (max-width: 395px){
+  .product-add-btn button {
+    padding: .80rem 1rem;
+    font-size: small;
   }
 }
